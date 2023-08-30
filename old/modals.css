@@ -1,0 +1,350 @@
+/* modals */
+.close-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close {
+  margin: 16px;
+  cursor: pointer;
+}
+
+.modal-content {
+  display: none;
+}
+
+#fade-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+#modal-window {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 580px;
+  z-index: 101;
+}
+
+#spmodal {
+  background: white;
+  margin: auto;
+  width: 900px;
+  height: 580px;
+  background: white;
+}
+
+.sp-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+}
+
+.sp-img {
+  width: 350px;
+  height: 420px;
+  overflow: hidden;
+}
+
+.sp-img {
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+.sp-img img {
+  width: 350px;
+  height: 420px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.sp-right {
+  width: 350px;
+  height: 400px;
+  margin: auto auto auto 24px;
+}
+
+.sp-right h1 {
+  margin: 0px;
+  font: 500 21px/30px "Rubik", sans-serif;
+  color: #008DD3;
+  text-align: left;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.sp-right h2 {
+  margin: 0px;
+  font: 500 16px/19px "Rubik", sans-serif;
+  color: #3F3F3F;
+  text-align: justify;
+  margin: 16px 0px;
+  text-transform: uppercase;
+}
+
+.sp-right p {
+  margin: 0px;
+  font: 400 14px/25px "Rubik", sans-serif;
+  color: #8D959D;
+  text-align: left;
+  max-height: 350px;
+  overflow: hidden;
+}
+
+.speaker-button {
+  color: white;
+  background-color: #008dd3;
+  box-shadow: 0px 4px 8px rgba(169, 169, 169, 0.3);
+  border-radius: 7px;
+  width: 148px;
+  text-align: center;
+  padding: 16px 0px;
+  font: 400 16px/19px "Rubik", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 36px;
+}
+
+#talkmodal {
+  background: white;
+  margin: auto;
+  width: 600px;
+  height: 500px;
+  background: white;
+}
+
+.talkmodal {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+
+.talkmodal h1 {
+  margin: 0px;
+  color: #008DD3;
+  text-align: center;
+  font: 500 36px/43px "Rubik", sans-serif;
+  grid-row: 1/1;
+}
+
+.talkmodal h2 {
+  margin: 0px;
+  color: black;
+  font: 400 18px/21px "Rubik", sans-serif;
+  text-transform: uppercase;
+  margin: 16px 0px;
+  grid-row: 2/2;
+  text-align: center;
+}
+
+.talkmodal p {
+  font: 400 16px/38px "Rubik", sans-serif;
+  color: #707070;
+  text-align: justify;
+  max-width: 500px;
+  margin: 0px;
+  grid-row: 3/3;
+}
+
+.talkregbutton {
+  color: white;
+  background-color: #008dd3;
+  box-shadow: 0px 4px 8px rgba(169, 169, 169, 0.3);
+  border-radius: 7px;
+  width: 136px;
+  text-align: center;
+  padding: 16px 0px;
+  font: 400 14px/17px "Rubik", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  grid-row: 4/4;
+  margin-top: 32px;
+}
+
+
+.panel-button { position: relative; top: 0px; }
+.panel-button:hover {
+  background: #007dbb;
+  position: relative; top: 2px;
+margin-bottom: -2px;
+
+}
+
+.box-button:hover {
+  background: #007dbb;
+  position: relative; top: 2px;
+
+}
+
+.talkregbutton:hover {
+  background: #007dbb;
+}
+
+.regbutton, .panel-button, .box-button, .uxc4-button {
+  transition: 0.1s all ease-in-out;
+}
+
+.uxc4-button:hover {
+  background: #f3f3f3;
+  margin-top: 62px;
+}
+
+@media screen and (max-width: 1024px) {
+  #spmodal {
+    margin: auto;
+    width: 650px;
+    height: 480px;
+  }
+
+  .sp-img {
+    margin: 0px;
+  }
+
+  .sp-right {
+    margin: 0px;
+  }
+
+  .sp-img img{
+    margin-left: 15px;
+    margin-right: 0px !important;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .sp-right p {
+    margin: 0px;
+    font: 400 14px; "Rubik", sans-serif;
+    color: #8D959D;
+    text-align: left;
+    max-height: 350px;
+    width: 280px
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .close {
+    margin: 8px;
+    cursor: pointer;
+  }
+
+  #spmodal {
+    margin: auto;
+    width: 400px;
+    height: 99%;
+  }
+
+  .sp-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    margin: auto;
+  }
+
+  .sp-img {
+    margin-left: 24px;
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .sp-right {
+    margin-left: 40px;
+  }
+
+  .sp-right h1 {
+    margin: 0px;
+    margin-left: px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .sp-right h2 {
+    margin: 0px;
+    margin-bottom: 8px;
+  }
+
+
+  #talkmodal {
+    margin: auto;
+    width: 450px !important;
+    height: 560px !important;
+  }
+
+
+    .talkmodal h1 {
+      margin-left: 30px !important;
+      margin-right: 30px !important;
+    }
+
+    .talkmodal p {
+      font: 400 18px "Rubik", sans-serif;
+      line-height: 25px;
+      margin-left: 30px !important;
+      margin-right: 30px !important;
+    }
+
+    .talkregbutton {
+      margin-top: 16px !important;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+  #spmodal {
+    margin: auto;
+    width: 300px;
+    height: 100%;
+  }
+
+  .sp-img  img {
+    width: 240px;
+    height: 240px;
+    object-fit: contain;
+    object-position: center;
+    margin-left: 0px;
+  }
+
+  .sp-right {
+    margin-left: 25px;
+  }
+
+  .sp-right h1 {
+    font-size: 16px;
+  }
+
+  .sp-right p {
+    margin: 0px;
+    font: 400 12px "Rubik", sans-serif;
+    color: #8D959D;
+    text-align: left;
+    max-width: 240px;
+    max-height: 240px;
+  }
+
+
+  #talkmodal {
+    width: 300px !important;
+    height: 500px !important
+  }
+
+  .talkmodal h1 {
+    font: 500 24px "Rubik", sans-serif;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+
+  .talkmodal p {
+    font: 400 14px "Rubik", sans-serif;
+    line-height: 22px;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+  }
+}
